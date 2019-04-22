@@ -1,17 +1,15 @@
+var lastCalledTime;
+var fps;
 
-		var fpsout = document.querySelector('#fps');
+function requestAnimFrame() {
 
-		setInterval(drawFrame, 1000 / 60);
-
-
-
-		var lastUpdate = new Date, fps=30;
-
-		function drawFrame() {
-			var now = new Date;
-			var dt = (now - lastUpdate) / 1000;
-			if (dt==0 || isNaN(dt)) return;
-			lastUpdate = now;
-			fps += (1/dt - fps) / 10;
-			fpsout.innerHTML = fps;
-		}
+  if(!lastCalledTime) {
+     lastCalledTime = Date.now();
+     fps = 0;
+     return;
+  }
+  delta = (Date.now() - lastCalledTime)/1000;
+  lastCalledTime = Date.now();
+  fps = 1/delta;
+	document.getElementById("fps").innerHTML = fps;
+}
