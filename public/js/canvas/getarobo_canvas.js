@@ -12,9 +12,7 @@
 			    h = document.body.offsetHeight;
 			ctx.canvas.width  = w;
 			ctx.canvas.height = h;
-			ctx.translate(w/2,h/2);
-			ctx.strokeStyle = 'red';
-			ctx.fillStyle = 'black';
+
 		}
 
 
