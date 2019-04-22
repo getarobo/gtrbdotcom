@@ -29,7 +29,7 @@ void main(){
     // we pass st as the y & z values of
     // a three dimensional vector to be
     // properly multiply by a 3x3 matrix
-    color = yuv2rgb * vec3(0.5, st.x, st.y);
+    color = yuv2rgb * vec3(abs(sin(u_time)), st.x, st.y);
 
     gl_FragColor = vec4(color,1.0);
 }
