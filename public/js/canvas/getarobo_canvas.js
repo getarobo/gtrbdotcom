@@ -1,9 +1,8 @@
 
-		var ctx = document.querySelector('canvas').getContext('2d'),
-		    fpsout = document.querySelector('#fps');
+		var ctx = document.querySelector('canvas').getContext('2d');
 
 
-		resizeCanvas();
+		//resizeCanvas();
 		window.addEventListener('resize', resizeCanvas, false);
 
 
