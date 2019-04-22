@@ -19,7 +19,7 @@ mat3 rgb2yuv = mat3(0.2126, 0.7152, 0.0722,
 
 void main(){
     vec2 st = gl_FragCoord.xy/u_resolution;
-    vec3 color = vec3(abs(sin(u_time)),0.0,0.0);
+    vec3 color = vec3(0.0);
 
     // UV values goes from -1 to 1
     // So we need to remap st (0.0 to 1.0)
@@ -29,7 +29,7 @@ void main(){
     // we pass st as the y & z values of
     // a three dimensional vector to be
     // properly multiply by a 3x3 matrix
-    color = yuv2rgb * vec3(abs(sin(u_time*0.1)), st.x, st.y);
+    color = yuv2rgb * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
 
     gl_FragColor = vec4(color,1.0);
 }
