@@ -25,10 +25,7 @@
 			var dt = (now - lastUpdate) / 1000;
 			if (dt==0 || isNaN(dt)) return;
 
-			ctx.save();
-			ctx.setTransform(1,0,0,1,0,0);
-			ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
-			ctx.restore();
+
 
 			lastUpdate = now;
 			fps += (1/dt - fps) / 10;
