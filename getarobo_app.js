@@ -16,7 +16,7 @@ app.use( express.static(path.join(__dirname, 'public')));
 var serveStatic = require('serve-static');
 
 //app.use("/", serveStatic( path.join(__dirname, 'palmtree')));
-app.use("/", serveStatic( path.join(__dirname, 'elemij_canvas')));
+app.use("/", serveStatic( path.join(__dirname, 'webgl_canvas')));
 //app.use("/canvas", serveStatic( path.join(__dirname, 'elemij_canvas')));
 
 
