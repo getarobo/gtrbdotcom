@@ -2,7 +2,6 @@
 		var ctx = document.querySelector('canvas').getContext('2d');
 
 
-		//resizeCanvas();
 		window.addEventListener('resize', resizeCanvas, false);
 
 
