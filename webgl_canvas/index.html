@@ -8,6 +8,7 @@
 	canvas { height:100%;
   width:100%;
   overflow:hidden; }
+  p { position:absolute; left:0; right:0; text-align:center; margin:0; padding:0.5em 5em; background:rgba(240,240,240,0.7) }
 
 </style>
 <script type="text/javascript" src="../js/GlslCanvas.js"></script>
@@ -15,5 +16,6 @@
 
 </head><body>
 	<canvas class="glslCanvas" data-fragment-url="../shader/yuvcolor_gene.frag"></canvas>
+  <p id="fps"></p>
 
 </body></html>
