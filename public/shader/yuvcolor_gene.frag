@@ -30,6 +30,6 @@ void main(){
     // a three dimensional vector to be
     // properly multiply by a 3x3 matrix
     //color = yuv2rgb * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
-    color = yuv2rgb;// * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
+    color = yuv2rgb * vec3(0.5,0.5,0.5);// * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
     gl_FragColor = vec4(color,1.0);
 }
