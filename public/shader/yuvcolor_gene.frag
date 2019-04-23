@@ -23,13 +23,13 @@ void main(){
 
     // UV values goes from -1 to 1
     // So we need to remap st (0.0 to 1.0)
-    st -= 0.5;  // becomes -0.5 to 0.5
-    st *= 2.0;  // becomes -1.0 to 1.0
+    ..st -= 0.5;  // becomes -0.5 to 0.5
+  //  st *= 2.0;  // becomes -1.0 to 1.0
 
     // we pass st as the y & z values of
     // a three dimensional vector to be
     // properly multiply by a 3x3 matrix
-    color = yuv2rgb * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
-
+    //color = yuv2rgb * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
+    color = yuv2rgb;// * vec3(0.5, st.x*sin(u_time*0.1+1.3), st.y*tan(u_time*0.1));
     gl_FragColor = vec4(color,1.0);
 }
