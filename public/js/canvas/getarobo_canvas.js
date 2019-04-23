@@ -14,5 +14,6 @@ function requestAnimFrame() {
   delta = (Date.now() - lastCalledTime)/1000;
   lastCalledTime = Date.now();
   fps = 1/delta;
+	console.log("fps:"+fps);
 	document.getElementById("fps").innerHTML = ""+fps;
 }
