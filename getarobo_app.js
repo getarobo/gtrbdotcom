@@ -19,6 +19,6 @@ var serveStatic = require('serve-static');
 app.use("/", serveStatic( path.join(__dirname, 'webgl_canvas')));
 //app.use("/canvas", serveStatic( path.join(__dirname, 'elemij_canvas')));
 
-
+app.use("/1", serveStatic( path.join(__dirname, 'webgl_canvas_1')));
 
 app.listen(port);
