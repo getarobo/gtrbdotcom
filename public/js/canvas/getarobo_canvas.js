@@ -3,6 +3,7 @@ var fps;
 
 
 window.requestAnimationFrame(requestAnimFrame);
+console.log("HI:"+0);
 
 function requestAnimFrame() {
 
