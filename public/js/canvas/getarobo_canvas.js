@@ -1,6 +1,9 @@
 var lastCalledTime;
 var fps;
 
+
+window.requestAnimationFrame(requestAnimFrame);
+
 function requestAnimFrame() {
 
   if(!lastCalledTime) {
@@ -11,5 +14,5 @@ function requestAnimFrame() {
   delta = (Date.now() - lastCalledTime)/1000;
   lastCalledTime = Date.now();
   fps = 1/delta;
-	document.getElementById("fps").innerHTML = fps;
+	document.getElementById("fps").innerHTML = ""+fps;
 }
