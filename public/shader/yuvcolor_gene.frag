@@ -23,7 +23,7 @@ void main(){
 
     // UV values goes from -1 to 1
     // So we need to remap st (0.0 to 1.0)
-    ..st -= 0.5;  // becomes -0.5 to 0.5
+    //st -= 0.5;  // becomes -0.5 to 0.5
   //  st *= 2.0;  // becomes -1.0 to 1.0
 
     // we pass st as the y & z values of
